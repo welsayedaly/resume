@@ -1,8 +1,8 @@
-../de/*.log
-../de/*.out
-../de/*.aux
+de/*.log
+de/*.out
+de/*.aux
 
-../us/*.log
-../us/*.out
-../us/*.aux
+us/*.log
+us/*.out
+us/*.aux
 

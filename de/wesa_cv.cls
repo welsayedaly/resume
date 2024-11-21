@@ -1,8 +1,4 @@
-% Created by Murat Can Karacabey
-% this is inspired by Michael Pollind's Awesome CV 
-% Created from scratch as a much simpler alternative to it to actually learn LaTeX.
-% Might be interpreted as an easier-to-edit or easier-to-understand-what-is-going-on version of it.
-\author{Murat Can Karacabey}
+\author{Walid El Sayed Aly}
 \RequirePackage[dvipsnames]{xcolor} % moved here I guess article class causes option clash with xcolor if used after loading the class
 \LoadClass[11pt]{article}
 \NeedsTeXFormat{LaTeX2e}
@@ -20,11 +16,17 @@
 \RequirePackage{ifthen}
 \RequirePackage{lipsum}
 \RequirePackage{array}
-\pagestyle{empty}
+\usepackage{fancyhdr} 
+
+\pagestyle{fancy} % Activate fancy header/footer
+\fancyhf{} % Clear default header/footer
+\fancyfoot[R]{\small \thepage} % Add page number to the right footer with small font
+
 % Für deutsche Sprachunterstützung
 \usepackage[ngerman]{babel}
 \usepackage{lmodern}        
-\usepackage{datetime}       
+\usepackage{datetime}  
+
 
 %Setup
 
@@ -89,11 +91,11 @@
 \newcommand{\homeview}{\href{\@mediumaccount}{\faHome\ \footnotesize home}}
 
 \newcommand{\name}{%
-    {\large \@firstname \ \textsc{\@lastname}}
+    {\large \@firstname \ {\@lastname}}
 }
 
 \newcommand{\contact}{%
-        {\small \@address  \cps \@mobile \\ \@mail%
+        {\small \@position \\ \@address  \cps \@mobile \\ \@mail%
         \\%
         \githubview \cps \mediumview \cps \homeview
         } % 

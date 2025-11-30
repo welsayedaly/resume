@@ -6,3 +6,4 @@ us/*.log
 us/*.out
 us/*.aux
 
+.DS_Store
